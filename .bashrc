@@ -109,6 +109,9 @@ export TERM='xterm-256color'
 # enable vi mode on bash command line
 set -o vi
 
+# set vim as default text editor
+export EDITOR=/usr/bin/vim
+
 # kill webrick Rails server (usefully when it's detatched)
 alias stopwebrick='kill -9 $(lsof -i:3000) &> /dev/null' 
 
