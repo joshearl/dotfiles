@@ -103,9 +103,15 @@ if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
 fi
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 
-
+# enable 256 color mode by default
 export TERM='xterm-256color'
 
-alias startrails='rails server -d' 
-alias stoprails='kill -9 $(lsof -i:3000) &> /dev/null' 
-alias projects='cd ~/Dropbox/Code/Rails/Projects'
+# enable vi mode on bash command line
+set -o vi
+
+# kill webrick Rails server (usefully when it's detatched)
+alias stopwebrick='kill -9 $(lsof -i:3000) &> /dev/null' 
+
+# shortcuts to frequently used directories
+alias _rails='~/Dropbox/Code/Rails/Projects'
+alias _js='~/Dropbox/Code/JavaScript/Projects'
