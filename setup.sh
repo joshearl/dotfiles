@@ -45,3 +45,12 @@ fi
 
 echo Creating link to Pathogen update script ...
 ln -s ~/Dropbox/Code/Dotfiles/update_plugins update_plugins
+
+# create link for openbox startup script
+cd ~/.config/openbox
+if [ -f autostart ]
+  then rm autostart
+fi
+
+echo Creating link to openbox autostart script ...
+ln -s ~/Dropbox/Code/Dotfiles/config/autostart autostart
