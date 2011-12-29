@@ -13,13 +13,11 @@ filetype on
 filetype plugin on
 filetype indent on
 
+" Enable syntax highlighting
+syntax on
+
 " Set colorscheme
-if $COLORTERM == 'gnome-terminal'
-   set term=gnome-256color
-   colorscheme railscasts
-else
-   colorscheme railscasts
-endif
+colorscheme railscasts
 
 set t_Co=256
 

@@ -2,13 +2,19 @@
 
 cd ~
 
+if [ -f .bash_aliases ]
+  then rm .bash_aliases 
+fi
+
+ln -s Dropbox/Code/Dotfiles/config/.bash_aliases .bash_aliases
+echo Creating link for .bash_aliases ...
+ 
 if [ -f .bashrc ]
   then rm .bashrc 
 fi
 
 ln -s Dropbox/Code/Dotfiles/config/.bashrc .bashrc
 echo Creating link for .bashrc ...
- 
 if [ -f .vimrc ]
   then rm .vimrc 
 fi
@@ -20,8 +26,15 @@ if [ -f .tmux.conf ]
   then rm .tmux.conf 
 fi
 
-ln -s Dropbox/Code/Dotfiles/config/.tmux-conf .tmux-conf
+ln -s Dropbox/Code/Dotfiles/config/.tmux.conf .tmux.conf
 echo Creating link for .tmux.conf ...
+
+if [ -f .Xmodmap ]
+  then rm .Xmodmap
+fi
+
+ln -s Dropbox/Code/Dotfiles/config/.Xmodmap .Xmodmap
+echo Creating link for .Xmodmap ...
 
 # install update_plugins script for vim pathogen 
 cd ~/.vim

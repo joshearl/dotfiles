@@ -1,0 +1,4 @@
+!! Map CapsLock to Esc 
+clear lock
+keycode 0x42 = Escape
+
