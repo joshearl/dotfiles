@@ -115,3 +115,5 @@ export EDITOR=/usr/bin/vim
 # set ruby version 
 rvm use 1.9.2 > /dev/null
 
+# add node.js to path
+export PATH=$PATH:/opt/node/bin
