@@ -36,6 +36,13 @@ fi
 ln -s Dropbox/Code/Dotfiles/config/.Xmodmap .Xmodmap
 echo Creating link for .Xmodmap ...
 
+if [ -f .conkyrc]
+  then rm .conkyrc
+fi
+
+ln -s Dropbox/Code/Dotfiles/config/.conkyrc .conkyrc
+echo Creating link for .conkyrc ...
+
 # install update_plugins script for vim pathogen 
 cd ~/.vim
 

@@ -17,7 +17,19 @@ filetype indent on
 syntax on
 
 " Set colorscheme
-colorscheme railscasts
+" colorscheme candy 
+" colorscheme elflord
+" colorscheme vibratink 
+" colorscheme vividchalk
+" colorscheme desert256
+" colorscheme xoria256
+" colorscheme zenburn
+" colorscheme devbox-dark-256
+colorscheme wombat256
+
+" Override theme background colors to restore transparency  
+hi Normal ctermbg=NONE 
+hi LineNr ctermbg=NONE 
 
 set t_Co=256
 
@@ -77,6 +89,7 @@ set autochdir
 " Disable creation of backup files, i.e. File.txt~
 set nobackup 
 set nowritebackup 
+set noswapfile
 
 " Function enables dollar sign at the end of word when using change word
 set diffexpr=MyDiff()
@@ -103,5 +116,9 @@ function MyDiff()
   silent execute '!' . cmd . ' ' . opt . arg1 . ' ' . arg2 . ' > ' . arg3 . eq
 endfunction
 
-
+function SetColorscheme (colorscheme)
+  execute 'colorscheme ' . a:colorscheme
+  hi Normal ctermbg=NONE 
+  hi LineNr ctermbg=NONE 
+endfunction
 
