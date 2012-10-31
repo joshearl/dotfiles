@@ -113,4 +113,5 @@ set -o vi
 export EDITOR=/usr/local/bin/vim
 
 # add node.js to path
-export PATH=$PATH:/opt/node/bin
+# export PATH=$PATH:/opt/node/bin
+export PATH=/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin

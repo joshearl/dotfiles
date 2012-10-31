@@ -1,0 +1,4 @@
+" Enable proper use of spaces for indenting code
+set expandtab
+set shiftwidth=2
+set softtabstop=2

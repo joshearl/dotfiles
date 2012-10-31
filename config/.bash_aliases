@@ -2,14 +2,13 @@
 alias stopwebrick='kill -9 $(lsof -i:3000) &> /dev/null' 
 
 # shortcuts to frequently used directories
-alias _rails='cd ~/Dropbox/Code/Rails/Projects'
-alias _js='cd ~/Dropbox/Code/JavaScript/Projects'
-alias _dotfiles='cd ~/Dropbox/Code/Dotfiles'
-alias _workspace='cd ~/Dropbox/Code/Workspace'
+alias _scripts='cd ~/Dropbox/Programs/Scripts/Bash'
 
 # UPMC HealthTrak commands
-alias _sass='cd ~/Dropbox/UPMC;sass --watch styles/scss:styles --line-numbers'
-alias _healthtrak='vim ~/Dropbox/UPMC/styles/scss'
+# alias _sass='cd ~/Dropbox/UPMC;sass --watch styles/scss:styles --line-numbers'
 
 # utility commands
-alias updates='sudo apt-get update && sudo apt-get upgrade'
+alias blog='~/Dropbox/Programs/Scripts/Bash/create_scriptogram_post.sh'
+alias update-vim-plugins='~/update_vim.sh'
+
+
