@@ -106,8 +106,14 @@ fi
 # enable 256 color mode by default
 export TERM='xterm-256color'
 
-# enable vi mode on bash command line
+# enable vi mode on bash command line and restore some of the emacs commands
 set -o vi
+
+bind -m vi-command ".":insert-last-argument
+bind -m vi-insert "\C-l.":clear-screen
+bind -m vi-insert "\C-a.":beginning-of-line
+bind -m vi-insert "\C-e.":end-of-line
+bind -m vi-insert "\C-w.":backward-kill-word
 
 # set vim as default text editor
 export EDITOR=/usr/local/bin/vim
