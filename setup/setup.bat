@@ -1,1 +1,1 @@
-mklink /H "%PROGRAMFILES(X86)%\Vim\vimfiles\update_plugins.rb" "%USERPROFILE%\Dropbox\Programs\Setup\Configuration\Dotfiles\update_plugins.rb"
+mklink /H "%APPDATA%\.emacs" "%USERPROFILE%\Dropbox\Dotfiles\.emacs"
