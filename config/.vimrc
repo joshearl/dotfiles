@@ -2,7 +2,8 @@
 
 " Pathogen needs to run before plugin indent on
 filetype off 
-call pathogen#runtime_append_all_bundles()
+" call pathogen#runtime_append_all_bundles()
+execute pathogen#infect()
 
 " generate helptags for everything in 'runtimepath'
 call pathogen#helptags() 
