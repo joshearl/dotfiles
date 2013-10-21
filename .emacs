@@ -1,6 +1,9 @@
 ;; disable the splash screen
 (setq inhibit-splash-screen t)
 
+;; wrap long lines
+(global-visual-line-mode t)
+
 ;; enable transient mark mode
 (transient-mark-mode 1)
 

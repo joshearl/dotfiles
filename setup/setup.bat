@@ -1,1 +1,1 @@
-mklink /H "%APPDATA%\.emacs" "%USERPROFILE%\Dropbox\Dotfiles\.emacs"
+mklink /H "%USERPROFILE%\.emacs" "%USERPROFILE%\Dropbox\Dotfiles\.emacs"
