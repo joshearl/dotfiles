@@ -23,6 +23,10 @@
 ;; highlight current line
 (global-hl-line-mode 1)
 
+;; add better git support
+(add-to-list 'package-archives
+             '("marmalade" . "http://marmalade-repo.org/packages/") t)
+
 ;; enable markdown support
 (add-to-list 'load-path "~/.emacs.d/plugins/markdown-mode")
 (autoload 'markdown-mode "markdown-mode" "Major mode for editing Markdown files" t)
