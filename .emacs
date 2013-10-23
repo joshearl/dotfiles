@@ -7,6 +7,9 @@
 ;; enable transient mark mode
 (transient-mark-mode 1)
 
+;; set default font
+(set-face-attribute 'default nil :font "Inconsolata-16")
+
 ;; org-mode configuration
 (require 'org)
 (setq org-startup-indented t)
@@ -23,9 +26,12 @@
 ;; highlight current line
 (global-hl-line-mode 1)
 
-;; add better git support
-(add-to-list 'package-archives
-             '("marmalade" . "http://marmalade-repo.org/packages/") t)
+;; add marmalade package repo
+(require 'package)
+(add-to-list 'package-archives 
+    '("marmalade" .
+      "http://marmalade-repo.org/packages/"))
+(package-initialize)
 
 ;; enable markdown support
 (add-to-list 'load-path "~/.emacs.d/plugins/markdown-mode")
@@ -58,3 +64,12 @@
     (end-of-buffer)
     (insert "\n\n")))
 (global-set-key (kbd "C-c j") 'org-journal-entry)
+
+;; resize window bindings
+(global-set-key (kbd "S-C-M-<left>") 'shrink-window-horizontally)
+(global-set-key (kbd "S-C-M-<right>") 'enlarge-window-horizontally)
+(global-set-key (kbd "S-C-M-<down>") 'shrink-window)
+(global-set-key (kbd "S-C-M-<up>") 'enlarge-window)
+
+;; magit bindings
+(global-set-key (kbd "C-x g") 'magit-status)
