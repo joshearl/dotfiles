@@ -23,6 +23,9 @@
 ;; disable scroll bars
 (scroll-bar-mode -1)
 
+;disable backup
+(setq backup-inhibited t)
+
 ;; highlight current line
 (global-hl-line-mode 1)
 
