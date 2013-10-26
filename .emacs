@@ -23,11 +23,8 @@
 ;; disable scroll bars
 (scroll-bar-mode -1)
 
-;disable backup
+;disable backupq
 (setq backup-inhibited t)
-
-;; highlight current line
-(global-hl-line-mode 1)
 
 ;; add marmalade package repo
 (require 'package)
