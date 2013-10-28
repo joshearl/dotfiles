@@ -4,6 +4,12 @@
 ;; wrap long lines
 (global-visual-line-mode t)
 
+;; add shortcut to set wide margins
+(global-set-key [C-f10]
+     (lambda ()
+     (interactive)
+     (set-window-margins (car (get-buffer-window-list (current-buffer) nil t)) 30 30)))
+
 ;; enable transient mark mode
 (transient-mark-mode 1)
 
