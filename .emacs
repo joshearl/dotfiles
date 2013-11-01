@@ -51,5 +51,8 @@
 (global-set-key (kbd "S-C-M-<down>") 'shrink-window)
 (global-set-key (kbd "S-C-M-<up>") 'enlarge-window)
 
+;; list and open buffers in the same window
+(global-set-key "\C-x\C-b" 'buffer-menu)
+
 ;; magit bindings
 (global-set-key (kbd "C-x g") 'magit-status)
