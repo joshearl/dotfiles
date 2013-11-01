@@ -10,6 +10,12 @@
 ;; set default font
 (set-face-attribute 'default nil :font "Inconsolata-16")
 
+;; add shortcuts for window navigation
+(global-set-key (kbd "C-x <up>") 'windmove-up)
+(global-set-key (kbd "C-x <down>") 'windmove-down)
+(global-set-key (kbd "C-x <right>") 'windmove-right)
+(global-set-key (kbd "C-x <left>") 'windmove-left)
+
 ;; org-mode configuration
 (require 'org)
 (setq org-startup-indented t)
